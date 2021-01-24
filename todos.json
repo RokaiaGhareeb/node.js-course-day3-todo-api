@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": "100",
+      "username": "Rokaia",
+      "fname": "Rokaia",
+      "password": "12345",
+      "loggedIn": true,
+      "todos": [
+        {
+          "id": "qBp0AsDWg",
+          "title": "This is todo title",
+          "status": "todo"
+        },
+        {
+          "title": "the updated Title",
+          "status": "in-progress",
+          "id": "wyTLawkyKE"
+        }
+      ]
+    },
+    {
+      "id": "101",
+      "username": "Rokaia2",
+      "fname": "Rokaia",
+      "password": "12345",
+      "loggedIn": true,
+      "todos": []
+    },
+    {
+      "id": "YyOdQTTw9",
+      "username": "Rokaia4",
+      "fname": "Rokaia",
+      "password": "1234587",
+      "loggedIn": true,
+      "todos": []
+    },
+    {
+      "id": "iBGMDrIiG",
+      "username": "Rokaia5",
+      "fname": "Rokaia",
+      "password": "125698",
+      "loggedIn": false,
+      "todos": []
+    }
+  ]
+}
