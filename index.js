@@ -18,6 +18,11 @@ app.use((req, res, next) => {
     next();
   });
 
+app.use( (req, res, next) =>  {
+    res.status(500);
+    res.send({error : "server error"});
+});
+
 //return all users with thier todos  
 app.get('/api/todos', (req, res) => {
     const todos = db.get('users').value();
@@ -168,11 +173,7 @@ app.post('/api/login', (req, res)=>{
     res.statusCode = 200;
 });
 
-app.use(function (err, req, res, next)  {
-    console.log(error);
-    res.status(err.status || 500);
-    next(err);
-});
+
 
 app.listen(port, () => {
     console.log(`listening at http://localhost:${port}`)
